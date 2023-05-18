@@ -25,4 +25,8 @@
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="appsettings.json" />
+  </ItemGroup>
+
 </Project>
