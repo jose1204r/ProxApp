@@ -294,3 +294,4 @@ C:\Users\jrodr\OneDrive\Documents\Repo\Prox\Prox\bin\Debug\net7.0\Microsoft.Exte
 C:\Users\jrodr\OneDrive\Documents\Repo\Prox\Prox\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\jrodr\OneDrive\Documents\Repo\Prox\Prox\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 C:\Users\jrodr\OneDrive\Documents\Repo\Prox\Prox\obj\Debug\net7.0\Prox.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jrodr\OneDrive\Documents\Repo\Prox\Prox\bin\Debug\net7.0\appsettings.json
