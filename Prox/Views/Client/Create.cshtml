@@ -1,0 +1,64 @@
+﻿@model Prox.Models.Client
+
+<h1>Create New Customer</h1>
+
+@using (Html.BeginForm("insertcl","Client", "Post"))
+{
+
+<div class="row">
+    <div class="col">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+
+            <div class="form-group">
+                <label asp-for="Company" class="control-label"></label>
+                <input type="text" asp-for="Company" class="form-control w-50" required />
+                <span asp-validation-for="Company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input type="number" asp-for="Phone" class="form-control w-50"required />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input type="text" asp-for="Address" class="form-control w-50" required />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="City" class="control-label"></label>
+                <input type="text" asp-for="City" class="form-control w-50" required />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Zipcode" class="control-label"></label>
+                <input type="number" asp-for="Zipcode" class="form-control w-50" required />
+                <span asp-validation-for="Zipcode" class="text-danger"></span>
+            </div>
+                <div class="form-group">
+                    <label asp-for="State" class="control-label"></label>
+                    <input type="text" asp-for="State" class="form-control w-50" required />
+                    <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input type="text"  asp-for="Email" class="form-control w-50" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <br>
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Client" asp-action="client">Back to List</a>
+
+
+</div>
+}

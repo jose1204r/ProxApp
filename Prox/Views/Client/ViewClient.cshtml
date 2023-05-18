@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@model Client
+
+
+<h3>@Model.Company</h3>
+
+
+<table id="tableschedule" class="table table-striped table-hover">
+
+
+    <tr>
+
+        <th>ID</th>
+        
+        <th>PHONE</th>
+        <th>ADDRESS</th>
+        <th>CITY</th>
+        <th>ZIP CODE</th>
+        <th>STATE</th>
+        <th>EMAIL</th>
+    </tr>
+    <tr>
+
+        <th>@Model.ID</th>
+        
+        <th>@Model.Phone</th>
+        <th>@Model.Address</th>
+        <th>@Model.City</th>
+        <th>@Model.Zipcode</th>
+        <th>@Model.State</th>
+        <th>@Model.Email</th>
+
+    </tr>
+
+</table>
+<div style="display: block">
+
+    @using (Html.BeginForm("DeleteClient","Client","Post"))
+    {
+
+        <input  class="btn btn-primary" type="hidden" asp-for="ID" value="@Model.ID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Customer" />
+
+
+
+
+
+
+
+    }
+</div>
+
+<div style="display: block">
+    <a href="/Client/UpdateClient/@Model.ID">Update this Customer</a>
+</div>

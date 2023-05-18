@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Scheduele
+
+<h2>Update @Model.Name</h2>
+
+@using (Html.BeginForm("UpdateServiceToDatabase","Jobs","Post"))
+{
+
+
+
+    <label  asp-for="Name"  class="control-label">Name</label>
+    <input type="text" class=" form-control w-50" asp-for="Name" type="hidden" value="@Model.Name" />
+   
+    <label asp-for="Description" class="control-label">Description</label>
+    <input type="text" class="form-control  w-50" name="Description"  value="@Model.Description" />
+    
+    <label asp-for="Problems" class="control-label">Problems</label>
+    <input type="text" class="form-control  w-50" step="0.01" name="Problems"  value="@Model.Problems" />
+
+        <label class="control-label"> DATE SCHEDULE</label>
+        <input type="datetime-local" asp-for="Datetime2" class="form-control w-50" />
+        <span asp-validation-for="Datetime2" class="text-danger"></span>
+    <label asp-for="Phone" class="control-label">Phone</label>
+    <input type="number" class="form-control w-50" step="0.01" name="phone"  value="@Model.Phone" />
+
+    <label asp-for="Address" class="control-label">Address</label>
+    <input type="text" class="form-control  w-50 " step="0.01" name="Address" value="@Model.Address" />
+
+     <label asp-for="City" class="control-label"></label>
+                <input type="text" asp-for="City" class="form-control w-50" />
+                <span asp-validation-for="City" class="text-danger"></span>
+
+
+    <label asp-for="State" class="control-label">State</label>
+    <input type="text" class="form-control  w-50 " step="0.01" name="State" value="@Model.State" />
+
+    <label asp-for="Zipcode" class="control-label">Zipcode</label>
+    <input type="number" class="form-control  w-50 " step="0.01" name="Zipcode" value="@Model.Zipcode" />
+
+    <label asp-for="Email" class="control-label">Email</label>
+    <input type="text" class="form-control w-50" step="0.01" name="Email"  value="@Model.Email" />
+    
+    <br />
+    <input type="submit" value="Update Product" class="btn btn-primary" />
+
+}
+
+
+
