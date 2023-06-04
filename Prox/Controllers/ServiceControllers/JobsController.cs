@@ -97,7 +97,15 @@ namespace Prox.Controllers
 
 
 
+        public IActionResult Assing()
+        {
+         
 
+              
+
+            return View();
+         
+        }
 
 
 

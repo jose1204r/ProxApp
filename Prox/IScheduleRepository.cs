@@ -13,11 +13,11 @@ namespace Prox
 
         public Scheduele Getinschedule(int ID);
 
-
         public void DeleteJob(Scheduele deletejob);
 
         public void UpdateSchedulet(Scheduele updateschedule);
 
+        public IEnumerable<Technicians>? GetTechscs();
 
     }
 }

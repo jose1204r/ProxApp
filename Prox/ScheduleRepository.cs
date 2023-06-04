@@ -55,5 +55,18 @@ new { Name = insert.Name, Description = insert.Description, Problems= insert.Pro
             _conn.Execute("UPDATE services SET Name = @Name,Description = @Description,Problems = @Problems,Datetime2 = @Datetime2,Phone = @Phone,Address= @Address,City =@City,State = @State,Zipcode = @Zipcode,Email = @Email WHERE Name = @Name",
                  new { Name = updateschedule.Name,Description =updateschedule.Description,Problems =updateschedule.Problems,Datetime2 =updateschedule.Datetime2,Phone =updateschedule.Phone,Address =updateschedule.Address,City = updateschedule.City,State =updateschedule.State,Zipcode =updateschedule.Zipcode,Email =updateschedule.Email,ID =updateschedule.ID });
         }
+
+        public IEnumerable<Technicians> GetTechscs()
+        {
+
+
+
+            return _conn.Query<Technicians>("SELECT * FROM technicians");
+            
+            
+
+        }
+
+       
     }
 }

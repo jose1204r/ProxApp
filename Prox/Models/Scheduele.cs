@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualBasic;
 using System.Data;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Prox.Models
 {
@@ -33,8 +35,8 @@ namespace Prox.Models
 
 
 
-            
-        
+      public IEnumerable<Scheduele> Schedueles { get; set; }
+
 
 
 

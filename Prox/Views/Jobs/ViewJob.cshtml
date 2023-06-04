@@ -53,11 +53,11 @@
     @using (Html.BeginForm("DeleteJob","Jobs","Post"))
     {
 
-            <input  class="btn btn-primary" type="hidden" asp-for="ID" value="@Model.ID" />
-            <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Job" />
+        <input class="btn btn-primary" type="hidden" asp-for="ID" value="@Model.ID">
+        <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?')" value="Delete this Job"> Delete</button>
 
 
-
+            
 
 
 
@@ -65,8 +65,18 @@
     }
 </div>
 
+    <br />
+   
+
+
+
+
+
+
         <br />
 
 <div style="display: block">
-    <a href="/Jobs/UpdateService/@Model.ID">Update this Service</a>
+    <a type="button" class="btn btn-primary" href="/Jobs/UpdateService/@Model.ID">Update this Service</a>
 </div>
+
+<br />

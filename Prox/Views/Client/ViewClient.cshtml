@@ -45,7 +45,7 @@
     {
 
         <input  class="btn btn-primary" type="hidden" asp-for="ID" value="@Model.ID" />
-        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Customer" />
+        <button class="btn btn-primary" type="submit" onclick="return confirm('Are you sure?')" value="Delete this Customer">Delete</button>
 
 
 
@@ -55,7 +55,7 @@
 
     }
 </div>
-
+<br />
 <div style="display: block">
-    <a href="/Client/UpdateClient/@Model.ID">Update this Customer</a>
+    <a class="btn btn-primary" href="/Client/UpdateClient/@Model.ID">Update this Customer</a>
 </div>
